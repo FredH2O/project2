@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="tribute, project, history">
+    <meta name="author" content="F.Huertas">
+    <meta name="description" content="tribute page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishy News Newsletter</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        section,
+        header {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: x-large;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sign Up to our Newsletter!</h1>
+    </header>
+    <section>
+        <form action="verified.html" method="get">
+            <fieldset>
+                <legend>Details</legend>
+                <label for="username">Enter Username</label>
+                <input type="text" id="text" name="text"><br>
+                <!-- regular expression trial 2.0 😅 " -->
+                <label for="password">Password</label>
+                <input 
+                type="password" 
+                id="password" 
+                name="password"
+                pattern="[A-Za-z]{5,}[\d]{3,}[\.]{1,1}"
+                title="Must have 5 letters at start, then 3 numbers followed by a period (.) in the end! Haha Example: dOgGy123. "
+                required>
+                <br>
+
+                <label for="email">Email Address :</label>
+                <input type="email" id="email" name="email" placeholder="wakanda@gmail.com">
+
+                <p>Would you like us to send you emails regarding :</p>
+
+                <input type="checkbox" id="answer1" name="answer1">
+                <label for="answer1">Daily Deals!</label><br>
+
+                <input type="checkbox" id="answer2" name="answer2">
+                <label for="answer2">Aquatic News!</label><br>
+
+                <input type="checkbox" id="answer3" name="answer3">
+                <label for="answer3">Don't send me anything please!</label><br><br>
+                <input type="submit" value="Sign Me Up!">
+
+
+            </fieldset>
+        </form>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
